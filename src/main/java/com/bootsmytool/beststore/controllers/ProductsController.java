@@ -32,7 +32,7 @@ public class ProductsController {
 	
 	@GetMapping({"","/"})
 	public String showProductList(Model model) {
-		List<Product> products = repo.findAll(Sort.by(Sort.Direction.DESC, "id"));
+		List<Product> products = repo.findAll(Sort.by(Sort.Direction.ASC, "id")); //ASC:升序, DESC:降序
 		model.addAttribute("products", products);
 		return "products/index";
 	}
