@@ -55,7 +55,7 @@ public class ProductsController {
 			return "products/CreateProduct";
 		}
 		
-		//save image file
+		//************************** save image file *****************************
 		MultipartFile image = productDto.getImageFile();
 		Date createdAt = new Date();
 		String storageFileName = createdAt.getTime() + "_" + image.getOriginalFilename();

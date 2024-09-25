@@ -32,7 +32,7 @@
   					<td th:text="${product.name}"></td>
   					<td th:text="${product.brand}"></td>
   					<td th:text="${product.category}"></td>
-  					<td th:text="@{'$'+ ${product.price}}"></td>
+  					<td th:text=" '$'+ ${product.price}"></td>
   					<td th:text="${product.description}"></td>
   					<td>
   						<img th:src="@{'/images/' + ${product.imageFileName}}" alt="..." width="100">
