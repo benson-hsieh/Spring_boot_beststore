@@ -1,7 +1,6 @@
 package com.bootsmytool.beststore.models;
 
 import org.springframework.web.multipart.MultipartFile;
-
 import jakarta.validation.constraints.*;
 
 public class ProductDto {

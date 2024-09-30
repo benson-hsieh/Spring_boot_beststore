@@ -19,7 +19,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.bootsmytool.beststore.models.Product;
 import com.bootsmytool.beststore.models.ProductDto;
-import com.bootsmytool.beststore.services.ProductsRepository;
+import com.bootsmytool.beststore.repository.ProductsRepository;
 
 import jakarta.validation.Valid;
 

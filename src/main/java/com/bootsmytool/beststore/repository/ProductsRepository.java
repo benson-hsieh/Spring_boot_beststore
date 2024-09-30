@@ -1,4 +1,4 @@
-package com.bootsmytool.beststore.services;
+package com.bootsmytool.beststore.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
