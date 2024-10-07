@@ -27,6 +27,8 @@ public class UserController {
 		return "register";
 	}
 	
+	// Spring 會透過依賴注入機制自動將 UserServiceImplement 這個具體的實現類注入到控制器中，因為它是 UserService 介面的實現類且標記了 @Service 註解
+	//這樣，在你實際使用 userService.save(userDto) 時，會執行的是 UserServiceImplement 中覆寫的 save() 方法。
 	@PostMapping("/register")
 	public String saveUser(@ModelAttribute("user") UserDto userDto, Model model) {
 		userService.save(userDto);
